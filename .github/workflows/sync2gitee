@@ -15,9 +15,10 @@ jobs:
     - name: Mirror the Github repos to Gitee.
       uses: Yikun/hub-mirror-action@master
       with:
-        src: github/ShixiangWang
-        dst: gitee/ShixiangWang
+        src: github/xygone
+        dst: gitee/xygone
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
         dst_token: ${{ secrets.GITEE_TOKEN }}
-        mappings: ".github=>github"
         force_update: true
+        static_list: "IPTV"
+        account_type: user
