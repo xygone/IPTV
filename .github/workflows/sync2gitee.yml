@@ -5,8 +5,8 @@ on:
   schedule:
     # * is a special character in YAML so you have to quote this string
     # UTC 17:00 -> CST (China) 1:00, see https://datetime360.com/cn/utc-cst-china-time/
-    # - cron: '0 17 * * *'
-    - cron: '*/2 * * * *' # every 30 minutes
+    - cron: '0 19 * * *'
+    # - cron: '*/2 * * * *' # every 30 minutes
 name: Mirror GitHub Auto Queried Repos to Gitee
 jobs:
   run:
