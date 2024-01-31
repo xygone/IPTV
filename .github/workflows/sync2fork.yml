@@ -2,7 +2,9 @@ name: Sync Fork
 
 on:
   schedule:
-    - cron: '*/60 * * * *' # every 30 minutes
+    # UTC 17:00 -> CST (China) 1:00, see https://datetime360.com/cn/utc-cst-china-time/
+    - cron: '0 18 * * *'
+    # - cron: '*/60 * * * *' # every 30 minutes
   workflow_dispatch: # on button click
 
 jobs:
